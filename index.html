@@ -39,6 +39,7 @@
             height:300px;
             width:98%;
             background-color:rgba(0, 0, 0, 0.5);
+            overflow-y: scroll;
         }
 
         @media(max-width:350px){
@@ -58,37 +59,47 @@
         }
         }
         
-        .first h6{
-            /* line-height:310px; */
-            /* width:100%; */
-            position: absolute;
-            top:15px;
-            left:20px;
-            /* color: rgba(24, 24, 24, 0.8); */
-            font-weight:normal;
-            font-family:"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-        }
-        
-        footer{
+        footer {
             background-image:url(nokonoshima9.JPG);
             background-size:cover;
             background-position:bottom;
             height:200px;
         }
         
-        .icons a{
+        .icons a {
             font-size:30px;
             background-color:rgba(0, 0, 0, 0.3);
         }
 
-        .in-box{
+        .in-box {
             height:300px;
             background-color:white;
             border:5px solid #343a40;
+            overflow-y: scroll;
         }
 
-        .box{
+        .box {
             position:relative;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        table tr {
+            border-bottom: solid 1px #eee;
+            cursor: pointer;
+        }
+
+        table tr:hover {
+            background-color: #d4f0fd;
+        }
+
+        table th,table td {
+            width: 25%;
+            padding: 15px 0;
         }
 
     </style>
@@ -122,7 +133,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">ショップガイド</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">宿泊施設</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">営業案内</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">アクセツ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">アクセス</a></li>
                 </ul>
             </div>
         </nav>
@@ -137,8 +148,16 @@
     <!-- お知らせボックス -->
             <div class="in-box row">
                 <div class="first col-12">
-                    <h6 class="text-dark">お知らせ</h6>
-                    <textarea class="form-control h-100" rows="5"></textarea>
+                    <h5 class="text-dark">お知らせ</h5>
+                        <table>
+                            <tr><td>2019/1/7　イベント内容を更新しました。</td></tr>
+                            <tr><td>2019/1/6　イベント内容を更新しました。</td></tr>
+                            <tr><td>2019/1/5　イベント内容を更新しました。</td></tr>
+                            <tr><td>2019/1/4　イベント内容を更新しました。</td></tr>  
+                            <tr><td>2019/1/3　イベント内容を更新しました。</td></tr>  
+                            <tr><td>2019/1/2　イベント内容を更新しました。</td></tr>  
+                            <tr><td>2019/1/1　イベント内容を更新しました。</td></tr>  
+                        </table>
                 </div>
             </div>
 
@@ -146,17 +165,16 @@
 
             <div class="row">
                 <div class="first col-sm-4"><img class="nocopic-row2"  src="nokonoshima2.JPG"><h6 class="text-light">イベント１</h6>
-                <h3>イベントの内容</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <h4>イベントの内容</h4>
+                <p>ここにイベント内容を入れてください。ここにイベント内容を入れてください。</p>
             　　</div>
                 <div class="first col-sm-4"><img class="nocopic-row2" src="nokonoshima3.JPG"><h6 class="text-light">イベント２</h6>
-                <h3>イベントの内容</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-
+                <h4>イベントの内容</h4>
+                <p>ここにイベント内容を入れてください。ここにイベント内容を入れてください。</p>
                 </div>
                 <div class="first col-sm-4"><img class="nocopic-row2" src="nokonoshima4.JPG"><h6 class="text-light">イベント３</h6>
-                <h3>イベントの内容</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <h4>イベントの内容</h4>
+                <p>ここにイベント内容を入れてください。ここにイベント内容を入れてください。</p>
                 </div>
             </div>
     <!-- 渡航案内 -->
@@ -164,9 +182,8 @@
                 <div class="first fifth col-sm-4"><img class="nocopic" src="nokonoshima5.JPG"><h6 class="text-light">5</h6></div>
                 <div class="first col-sm-8 text-center"><img class="nocopic" src="nokonoshima6.JPG">
                     <div class="transparent-black pt-2">
-                    <h6 class="text-light">6</h6>
                     <!-- table -->
-                    <p class="text-center text-lighweight-bold">姪浜発〜能古島 フェリー時刻表</p>
+                    <p class="text-center text-light weight-bold">姪浜発〜能古島 フェリー時刻表</p>
                     <table class="table table-hover text-light">
                         <thead>
                             <tr><th>行き</th><th>帰り</th></tr>
@@ -203,7 +220,7 @@
 <footer>
   <div class="sousin py-3">
      <input> 
-     <input class="py-2" type="submit" valu="検索">  
+     <input class="py-1" type="submit" valu="検索">  
   </div>
   <div class="icons py-2">
         <a class="py-2 px-3 mx-1 rounded-circle" href="#"><span class="fab fa-twitter-square text-light"></span></a>
